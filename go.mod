@@ -1,5 +1,11 @@
 module github.com/go-git/go-git/v5
 
+go 1.13
+
+// replace github.com/go-git/go-billy => /home/mrh/src/go/src/github.com/happybeing/go-billy
+// xxx
+replace github.com/go-git/go-billy/v5 => ../go-billy
+
 require (
 	github.com/anmitsu/go-shlex v0.0.0-20161002113705-648efa622239 // indirect
 	github.com/armon/go-socks5 v0.0.0-20160902184237-e75332964ef5
@@ -24,5 +30,3 @@ require (
 	gopkg.in/check.v1 v1.0.0-20200227125254-8fa46927fb4f
 	gopkg.in/warnings.v0 v0.1.2 // indirect
 )
-
-go 1.13
