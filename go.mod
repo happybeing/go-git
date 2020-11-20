@@ -2,9 +2,9 @@ module github.com/go-git/go-git/v5
 
 go 1.13
 
-// replace github.com/go-git/go-billy => /home/mrh/src/go/src/github.com/happybeing/go-billy
-// xxx
-replace github.com/go-git/go-billy/v5 => ../go-billy
+// Go/wasm support requires minor changes to go-git and go-billy
+replace github.com/go-git/go-billy/v5 => github.com/happybeing/go-billy	// For Go/wasm builds
+// replace github.com/go-git/go-billy/v5 => ../go-billy	// For local development place ./go-git next to ./go-billy
 
 require (
 	github.com/anmitsu/go-shlex v0.0.0-20161002113705-648efa622239 // indirect
